@@ -1,0 +1,11 @@
+I:\WORK\Test\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.csproj.CoreCompileInputs.cache
+I:\WORK\Test\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.AssemblyInfoInputs.cache
+I:\WORK\Test\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.AssemblyInfo.cs
+I:\WORK\Test\EventBusTest\EventBusTest\bin\Debug\netcoreapp2.2\EventBusTest.deps.json
+I:\WORK\Test\EventBusTest\EventBusTest\bin\Debug\netcoreapp2.2\EventBusTest.runtimeconfig.json
+I:\WORK\Test\EventBusTest\EventBusTest\bin\Debug\netcoreapp2.2\EventBusTest.runtimeconfig.dev.json
+I:\WORK\Test\EventBusTest\EventBusTest\bin\Debug\netcoreapp2.2\EventBusTest.dll
+I:\WORK\Test\EventBusTest\EventBusTest\bin\Debug\netcoreapp2.2\EventBusTest.pdb
+I:\WORK\Test\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.dll
+I:\WORK\Test\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.pdb
+I:\WORK\Test\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.csprojAssemblyReference.cache
