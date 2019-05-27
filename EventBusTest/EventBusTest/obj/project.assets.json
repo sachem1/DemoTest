@@ -722,11 +722,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\WORK\\Test\\EventBusTest\\EventBusTest\\EventBusTest.csproj",
+      "projectUniqueName": "I:\\WORK\\Github\\DemoTest\\EventBusTest\\EventBusTest\\EventBusTest.csproj",
       "projectName": "EventBusTest",
-      "projectPath": "I:\\WORK\\Test\\EventBusTest\\EventBusTest\\EventBusTest.csproj",
+      "projectPath": "I:\\WORK\\Github\\DemoTest\\EventBusTest\\EventBusTest\\EventBusTest.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "I:\\WORK\\Test\\EventBusTest\\EventBusTest\\obj\\",
+      "outputPath": "I:\\WORK\\Github\\DemoTest\\EventBusTest\\EventBusTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
