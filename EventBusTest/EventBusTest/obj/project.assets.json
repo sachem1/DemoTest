@@ -716,23 +716,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Users\\jieqiang.CAAD\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\WORK\\Github\\DemoTest\\EventBusTest\\EventBusTest\\EventBusTest.csproj",
+      "projectUniqueName": "I:\\Work\\PersonProject\\Github\\DemoTest\\EventBusTest\\EventBusTest\\EventBusTest.csproj",
       "projectName": "EventBusTest",
-      "projectPath": "I:\\WORK\\Github\\DemoTest\\EventBusTest\\EventBusTest\\EventBusTest.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "I:\\WORK\\Github\\DemoTest\\EventBusTest\\EventBusTest\\obj\\",
+      "projectPath": "I:\\Work\\PersonProject\\Github\\DemoTest\\EventBusTest\\EventBusTest\\EventBusTest.csproj",
+      "packagesPath": "C:\\Users\\jieqiang.CAAD\\.nuget\\packages\\",
+      "outputPath": "I:\\Work\\PersonProject\\Github\\DemoTest\\EventBusTest\\EventBusTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jieqiang.CAAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -740,6 +740,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://172.16.2.9:8080/tfs/Caad.Developer/_packaging/Coralcode/nuget/v3/index.json": {},
+        "http://172.16.2.9:8080/tfs/Caad.Developer/_packaging/CoralcodeCore/nuget/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
