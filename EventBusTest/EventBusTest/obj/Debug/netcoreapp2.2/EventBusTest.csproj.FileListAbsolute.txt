@@ -20,3 +20,14 @@ I:\WORK\Github\DemoTest\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventB
 I:\WORK\Github\DemoTest\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.AssemblyInfo.cs
 I:\WORK\Github\DemoTest\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.dll
 I:\WORK\Github\DemoTest\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.pdb
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\EventBusTest\bin\Debug\netcoreapp2.2\EventBusTest.deps.json
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\EventBusTest\bin\Debug\netcoreapp2.2\EventBusTest.runtimeconfig.json
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\EventBusTest\bin\Debug\netcoreapp2.2\EventBusTest.runtimeconfig.dev.json
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\EventBusTest\bin\Debug\netcoreapp2.2\EventBusTest.dll
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\EventBusTest\bin\Debug\netcoreapp2.2\EventBusTest.pdb
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.csprojAssemblyReference.cache
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.csproj.CoreCompileInputs.cache
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.AssemblyInfoInputs.cache
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.AssemblyInfo.cs
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.dll
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\EventBusTest\obj\Debug\netcoreapp2.2\EventBusTest.pdb
