@@ -1,0 +1,14 @@
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\ModuleTestCommon.deps.json
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\ModuleTestCommon.dll
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\obj\Debug\netstandard2.0\ModuleTestCommon.csprojAssemblyReference.cache
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\obj\Debug\netstandard2.0\ModuleTestCommon.csproj.CoreCompileInputs.cache
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\obj\Debug\netstandard2.0\ModuleTestCommon.AssemblyInfoInputs.cache
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\obj\Debug\netstandard2.0\ModuleTestCommon.AssemblyInfo.cs
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\ModuleTestCommon.pdb
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Authentication.dll
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Authentication.xml
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\obj\Debug\netstandard2.0\ModuleTestCommon.csproj.CopyComplete
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\obj\Debug\netstandard2.0\ModuleTestCommon.dll
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\obj\Debug\netstandard2.0\ModuleTestCommon.pdb
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\StackExchange.Redis.dll
+I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\StackExchange.Redis.xml

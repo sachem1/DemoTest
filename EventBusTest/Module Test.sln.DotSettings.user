@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\jieqiang.CAAD\.nuget\packages\microsoft.aspnetcore.http.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.mvc.core\2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.cookiepolicy\2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.CookiePolicy.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.authentication\2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.dll" /&gt;&#xD;
+  &lt;Assembly Path="I:\Work\PersonProject\Github\DemoTest\EventBusTest\packages\ServiceStack.Caching.Memcached.5.5.0\lib\net45\ServiceStack.Caching.Memcached.dll" /&gt;&#xD;
+  &lt;Assembly Path="I:\Work\PersonProject\Github\DemoTest\EventBusTest\packages\ServiceStack.Client.5.5.0\lib\net45\ServiceStack.Client.dll" /&gt;&#xD;
+  &lt;Assembly Path="I:\Work\PersonProject\Github\DemoTest\EventBusTest\packages\EnyimMemcached.2.16.0\lib\net35\Enyim.Caching.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\jieqiang.CAAD\.nuget\packages\microsoft.extensions.configuration\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\jieqiang.CAAD\.nuget\packages\stackexchange.redis\2.0.601\lib\netstandard2.0\StackExchange.Redis.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

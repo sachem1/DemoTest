@@ -1,0 +1,16 @@
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\bin\Debug\netcoreapp2.1\RedisTest.deps.json
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\bin\Debug\netcoreapp2.1\RedisTest.runtimeconfig.json
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\bin\Debug\netcoreapp2.1\RedisTest.runtimeconfig.dev.json
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\bin\Debug\netcoreapp2.1\RedisTest.dll
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\bin\Debug\netcoreapp2.1\RedisTest.pdb
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\obj\Debug\netcoreapp2.1\RedisTest.csproj.CoreCompileInputs.cache
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\obj\Debug\netcoreapp2.1\RedisTest.AssemblyInfoInputs.cache
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\obj\Debug\netcoreapp2.1\RedisTest.AssemblyInfo.cs
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\obj\Debug\netcoreapp2.1\RedisTest.dll
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\obj\Debug\netcoreapp2.1\RedisTest.pdb
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\obj\Debug\netcoreapp2.1\RedisTest.csprojAssemblyReference.cache
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\bin\Debug\netcoreapp2.1\ModuleTestCommon.dll
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Authentication.dll
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\bin\Debug\netcoreapp2.1\ModuleTestCommon.pdb
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Authentication.xml
+I:\Work\PersonProject\Github\DemoTest\EventBusTest\RedisTest\obj\Debug\netcoreapp2.1\RedisTest.csproj.CopyComplete
