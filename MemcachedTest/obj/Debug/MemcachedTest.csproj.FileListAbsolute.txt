@@ -125,3 +125,11 @@ I:\Work\PersonProject\Github\DemoTest\MemcachedTest\bin\Debug\System.Numerics.Ve
 I:\Work\PersonProject\Github\DemoTest\MemcachedTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 I:\Work\PersonProject\Github\DemoTest\MemcachedTest\obj\Debug\MemcachedTest.exe.config
 I:\Work\PersonProject\Github\DemoTest\MemcachedTest\obj\Debug\MemcachedTest.csproj.CopyComplete
+L:\Work\GitRepository\DemoTest\MemcachedTest\bin\Debug\MemcachedTest.exe.config
+L:\Work\GitRepository\DemoTest\MemcachedTest\bin\Debug\MemcachedTest.exe
+L:\Work\GitRepository\DemoTest\MemcachedTest\bin\Debug\MemcachedTest.pdb
+L:\Work\GitRepository\DemoTest\MemcachedTest\obj\Debug\MemcachedTest.csprojAssemblyReference.cache
+L:\Work\GitRepository\DemoTest\MemcachedTest\obj\Debug\MemcachedTest.csproj.CoreCompileInputs.cache
+L:\Work\GitRepository\DemoTest\MemcachedTest\obj\Debug\MemcachedTest.csproj.CopyComplete
+L:\Work\GitRepository\DemoTest\MemcachedTest\obj\Debug\MemcachedTest.exe
+L:\Work\GitRepository\DemoTest\MemcachedTest\obj\Debug\MemcachedTest.pdb
