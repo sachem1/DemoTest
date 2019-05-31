@@ -40,7 +40,6 @@ I:\Work\PersonProject\Github\DemoTest\WebApplication1\bin\Debug\netcoreapp2.1\We
 I:\Work\PersonProject\Github\DemoTest\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.pdb
 I:\Work\PersonProject\Github\DemoTest\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.Views.dll
 I:\Work\PersonProject\Github\DemoTest\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.Views.pdb
-I:\Work\PersonProject\Github\DemoTest\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.csprojAssemblyReference.cache
 I:\Work\PersonProject\Github\DemoTest\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.csproj.CoreCompileInputs.cache
 I:\Work\PersonProject\Github\DemoTest\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.RazorAssemblyInfo.cache
 I:\Work\PersonProject\Github\DemoTest\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.RazorAssemblyInfo.cs
