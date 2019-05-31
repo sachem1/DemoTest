@@ -67,3 +67,4 @@ I:\Work\PersonProject\Github\DemoTest\WebApplication1\obj\Debug\netcoreapp2.1\We
 I:\Work\PersonProject\Github\DemoTest\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.dll
 I:\Work\PersonProject\Github\DemoTest\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.pdb
 I:\Work\PersonProject\Github\DemoTest\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.csproj.CopyComplete
+I:\Work\PersonProject\Github\DemoTest\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.csprojAssemblyReference.cache
