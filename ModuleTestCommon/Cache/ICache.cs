@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace ModuleTestCommon.Cache
+namespace ModuleCommon.Cache
 {
     public interface ICache : IDisposable
     {
@@ -18,6 +17,6 @@ namespace ModuleTestCommon.Cache
 
         void Remove(string contextKey);
 
-
+        bool Exist(string contextKey, string dataKey);
     }
 }

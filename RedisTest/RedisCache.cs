@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Text;
-using ModuleTestCommon.Cache;
+using System.Linq;
+using ModuleCommon.Cache;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 
-namespace RedisTest
+namespace Redis
 {
     public class RedisCache : ICache
     {
@@ -24,7 +24,7 @@ namespace RedisTest
 
         public T Get<T>(string contextKey, string dataKey, Func<T> action, int? expireationSeconds = null)
         {
-            Func<T> redisAction = () =>
+            T RedisAction()
             {
                 string key = GeneralContextKey(contextKey);
                 if (_database.HashExists(key, dataKey))
@@ -42,34 +42,65 @@ namespace RedisTest
                     _database.KeyExpire(key, TimeSpan.FromSeconds(expireationSeconds.Value));
                 }
                 return data;
-            };
+            }
 
-            return redisAction();
+            return RedisAction();
         }
 
         public T Get<T>(string contextKey, string dataKey)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(contextKey) || string.IsNullOrEmpty(dataKey))
+                return default(T);
+
+            var result = _database.HashGet(GeneralContextKey(contextKey), dataKey);
+            return ResolveJson<T>(result);
         }
 
         public IDictionary<string, T> Get<T>(string contextKey)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(contextKey))
+                return default(IDictionary<string, T>);
+
+            var result = _database.HashGetAll(GeneralContextKey(contextKey)).ToDictionary(item => (string)item.Name, item => ResolveJson<T>(item.Value));
+            return result;
         }
 
         public void Set<T>(string contextKey, string dataKey, T value, int? expirationSeconds = null)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(contextKey) || string.IsNullOrEmpty(dataKey))
+                return;
+
+            _database.HashSet(GeneralContextKey(contextKey), dataKey, JsonConvert.SerializeObject(value));
+            if (expirationSeconds.HasValue)
+                _database.KeyExpire(contextKey, TimeSpan.FromSeconds(expirationSeconds.Value));
         }
 
         public void Remove(string contextKey, string dataKey)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(contextKey) || string.IsNullOrEmpty(dataKey))
+                return;
+
+            _database.HashDelete(GeneralContextKey(contextKey), dataKey);
         }
 
         public void Remove(string contextKey)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(contextKey))
+                return;
+
+            _database.HashDelete(GeneralContextKey(contextKey),RedisValue.Null);
+        }
+
+        public bool Exist(string contextKey, string dataKey)
+        {
+            if (string.IsNullOrEmpty(contextKey) || string.IsNullOrEmpty(dataKey))
+                return false;
+
+            var key = GeneralContextKey(contextKey);
+            if (!_database.HashExists(key, dataKey))
+                return false;
+
+            return true;
         }
 
         private T ResolveJson<T>(RedisValue value)
