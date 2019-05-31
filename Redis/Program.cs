@@ -28,6 +28,11 @@ namespace Redis
             database.StringSet("test1", DateTime.Now.Ticks);
             Console.WriteLine($"test1-->:{database.StringGet("test1")}");
             Console.ReadLine();
+
+
+
+
+
         }
 
 
