@@ -60,3 +60,4 @@ L:\Work\GitRepository\DemoTest\MiddlewareTest\obj\Debug\netcoreapp2.1\Middleware
 L:\Work\GitRepository\DemoTest\MiddlewareTest\obj\Debug\netcoreapp2.1\MiddlewareTest.dll
 L:\Work\GitRepository\DemoTest\MiddlewareTest\obj\Debug\netcoreapp2.1\MiddlewareTest.pdb
 L:\Work\GitRepository\DemoTest\MiddlewareTest\obj\Debug\netcoreapp2.1\MiddlewareTest.csproj.CopyComplete
+I:\Work\PersonProject\Github\DemoTest\MiddlewareTest\obj\Debug\netcoreapp2.1\MiddlewareTest.csprojAssemblyReference.cache

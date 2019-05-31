@@ -10,8 +10,6 @@ I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\
 I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\obj\Debug\netstandard2.0\ModuleTestCommon.csproj.CopyComplete
 I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\obj\Debug\netstandard2.0\ModuleTestCommon.dll
 I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\obj\Debug\netstandard2.0\ModuleTestCommon.pdb
-I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\StackExchange.Redis.dll
-I:\Work\PersonProject\Github\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\StackExchange.Redis.xml
 L:\Work\GitRepository\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\ModuleTestCommon.deps.json
 L:\Work\GitRepository\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\ModuleTestCommon.dll
 L:\Work\GitRepository\DemoTest\ModuleTestCommon\bin\Debug\netstandard2.0\ModuleTestCommon.pdb
