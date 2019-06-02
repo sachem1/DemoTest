@@ -18,5 +18,7 @@ namespace ModuleCommon.Cache
         void Remove(string contextKey);
 
         bool Exist(string contextKey, string dataKey);
+
+
     }
 }

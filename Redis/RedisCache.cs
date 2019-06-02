@@ -8,7 +8,7 @@ using StackExchange.Redis;
 
 namespace Redis
 {
-    public class RedisCache : ICache
+    public class RedisCache : BaseCache, ICache
     {
         private readonly IDatabase _database;
 
@@ -108,10 +108,6 @@ namespace Redis
             if (!value.HasValue) return default(T);
             return JsonConvert.DeserializeObject<T>(value);
         }
-
-        private string GeneralContextKey(string contextKey)
-        {
-            return contextKey;
-        }
+        
     }
 }
