@@ -15,7 +15,7 @@ namespace Redis
         {
             LocalCache_Test();
 
-
+            RedisCache_Test();
             //暂停
             Console.ReadLine();
         }

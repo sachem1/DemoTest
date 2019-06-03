@@ -13,7 +13,6 @@ namespace Redis
         private readonly IDatabase _database;
 
 
-
         public RedisCache(RedisSetting setting)
         {
             _database = RedisManager.GetRedisDatabase(setting);
