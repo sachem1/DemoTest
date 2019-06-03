@@ -1,0 +1,17 @@
+I:\Work\PersonProject\Github\DemoTest\Memcached\obj\Debug\netcoreapp2.1\Memcached.csproj.CoreCompileInputs.cache
+I:\Work\PersonProject\Github\DemoTest\Memcached\obj\Debug\netcoreapp2.1\Memcached.AssemblyInfoInputs.cache
+I:\Work\PersonProject\Github\DemoTest\Memcached\obj\Debug\netcoreapp2.1\Memcached.AssemblyInfo.cs
+I:\Work\PersonProject\Github\DemoTest\Memcached\bin\Debug\netcoreapp2.1\Memcached.dll.config
+I:\Work\PersonProject\Github\DemoTest\Memcached\bin\Debug\netcoreapp2.1\Memcached.deps.json
+I:\Work\PersonProject\Github\DemoTest\Memcached\bin\Debug\netcoreapp2.1\Memcached.runtimeconfig.json
+I:\Work\PersonProject\Github\DemoTest\Memcached\bin\Debug\netcoreapp2.1\Memcached.runtimeconfig.dev.json
+I:\Work\PersonProject\Github\DemoTest\Memcached\bin\Debug\netcoreapp2.1\Memcached.dll
+I:\Work\PersonProject\Github\DemoTest\Memcached\bin\Debug\netcoreapp2.1\Memcached.pdb
+I:\Work\PersonProject\Github\DemoTest\Memcached\bin\Debug\netcoreapp2.1\ModuleCommon.dll
+I:\Work\PersonProject\Github\DemoTest\Memcached\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Authentication.dll
+I:\Work\PersonProject\Github\DemoTest\Memcached\bin\Debug\netcoreapp2.1\ModuleCommon.pdb
+I:\Work\PersonProject\Github\DemoTest\Memcached\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Authentication.xml
+I:\Work\PersonProject\Github\DemoTest\Memcached\obj\Debug\netcoreapp2.1\Memcached.csprojAssemblyReference.cache
+I:\Work\PersonProject\Github\DemoTest\Memcached\obj\Debug\netcoreapp2.1\Memcached.csproj.CopyComplete
+I:\Work\PersonProject\Github\DemoTest\Memcached\obj\Debug\netcoreapp2.1\Memcached.dll
+I:\Work\PersonProject\Github\DemoTest\Memcached\obj\Debug\netcoreapp2.1\Memcached.pdb

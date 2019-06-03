@@ -11,9 +11,9 @@ namespace Redis
     {
         private readonly MemoryCache _memoryCache;
 
-        public LocalCache(MemoryCache memoryCache)
+        public LocalCache(MemoryCacheSetting setting)
         {
-            _memoryCache = memoryCache;
+            _memoryCache = new MemoryCache(Convert(setting));
         }
 
         public void Dispose()
@@ -101,6 +101,17 @@ namespace Redis
             var key = GeneralContextKey(contextKey);
             if (string.IsNullOrEmpty(key)) throw new ArgumentNullException($"缓存{nameof(contextKey)}不能为空！");
             if (string.IsNullOrEmpty(dataKey)) throw new ArgumentNullException($"缓存{nameof(dataKey)}不能为空！");
+        }
+
+
+        private MemoryCacheOptions Convert(MemoryCacheSetting setting)
+        {
+            
+            var options=new MemoryCacheOptions()
+            {
+                ExpirationScanFrequency = TimeSpan.FromSeconds(setting.TimeOut)
+            };
+            return options;
         }
     }
 }

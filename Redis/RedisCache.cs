@@ -12,9 +12,11 @@ namespace Redis
     {
         private readonly IDatabase _database;
 
-        public RedisCache(IDatabase database)
+
+
+        public RedisCache(RedisSetting setting)
         {
-            _database = database;
+            _database = RedisManager.GetRedisDatabase(setting);
         }
         [ExcludeFromCodeCoverage]
         public void Dispose()

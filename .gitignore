@@ -402,3 +402,9 @@
 /Memcached/bin/Debug
 /ConsoleApplication/bin/Debug/netcoreapp2.1
 /ConsoleApplication/obj/Debug/netcoreapp2.1
+/CacheAdapter/bin/Debug/netcoreapp2.1
+/CacheAdapter/obj
+/UnitTestProject/bin/Debug/netcoreapp2.1
+/UnitTestProject/obj
+/XUnitTestProject/bin/Debug/netcoreapp2.1
+/XUnitTestProject/obj
