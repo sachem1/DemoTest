@@ -408,3 +408,9 @@
 /UnitTestProject/obj
 /XUnitTestProject/bin/Debug/netcoreapp2.1
 /XUnitTestProject/obj
+/Memcached/obj
+/Memcached/bin
+/UnitTestProject/bin
+/WebApplication1/obj
+/WebApplication1/bin
+/XUnitTestProject/bin
