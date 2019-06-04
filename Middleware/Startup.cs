@@ -46,7 +46,7 @@ namespace Middleware
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            app.UseRequestIpScore();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
