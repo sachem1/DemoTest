@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.IO;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Middleware.MiddlewareExtension;
 
 namespace Middleware
@@ -46,6 +49,26 @@ namespace Middleware
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            var provider = new FileExtensionContentTypeProvider {Mappings = {[".myapp"] = "application/x-msdownload"}};
+            provider.Mappings.Remove(".png");
+
+
+            //
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),@"wwwroot\images")),
+                RequestPath = new PathString("/OpenImage"),
+                ContentTypeProvider = provider
+            });
+
+         
+            app.UseDirectoryBrowser(new DirectoryBrowserOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\images")),
+                RequestPath = new PathString("/OpenImage"),
+                
+            });
+
             app.UseCookiePolicy();
             app.UseRequestIpScore();
             app.UseContentCustomMiddleware();
