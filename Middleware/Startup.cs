@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Middleware.MiddlewareExtension;
 
 namespace Middleware
 {
@@ -47,6 +48,8 @@ namespace Middleware
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseRequestIpScore();
+            app.UseContentCustomMiddleware();
+            app.UserAuthCustomMiddleware();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
