@@ -1,20 +1,40 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Middleware.Models;
+using ModuleCommon;
 
 namespace Middleware.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ILogger<HomeController> _logger;
+        private readonly ILoggerFactory _loggerFactory;
+        private readonly IOptionService _optionService;
+
+        public HomeController(ILogger<HomeController> logger, ILoggerFactory loggerFactory, IOptionService optionService)
+        {
+            _logger = logger;
+            _loggerFactory = loggerFactory;
+            _optionService = optionService;
+        }
+
         public IActionResult Index()
         {
+            _logger.LogDebug(HttpContext.Request.Host.Value,new Exception("test"),new object());
+            _logger.LogDebug("这里是首页");
+            _logger.LogInformation("首页出现了异常");
+
+            _logger.LogError(_optionService.GetOptions().Result);
             return View();
         }
 
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
-
+            _logger.LogInformation(HttpContext.Request.Host.Value, ViewData["Message"], new object());
+            _loggerFactory.AddConsole(LogLevel.Information, true);
             return View();
         }
 
