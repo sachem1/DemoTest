@@ -1,4 +1,8 @@
-﻿using System.IO;
+﻿using System;
+using System.Diagnostics;
+using System.IO;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -7,7 +11,9 @@ using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Logging;
 using Middleware.MiddlewareExtension;
+using ModuleCommon;
 
 namespace Middleware
 {
@@ -21,7 +27,7 @@ namespace Middleware
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -30,12 +36,20 @@ namespace Middleware
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            //autofac
+            var containerBuilder = new ContainerBuilder();
+            containerBuilder.RegisterModule<CommonModule>();
+            containerBuilder.Populate(services);
+            var container = containerBuilder.Build();
+            return new AutofacServiceProvider(container);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -46,6 +60,8 @@ namespace Middleware
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+            
+            loggerFactory.AddLog4Net();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

@@ -382,3 +382,8 @@
 /WebApplication1/bin
 /XUnitTestProject/bin
 /EventBus/obj
+/Middleware/bin/Debug/netcoreapp2.2
+/ModuleCommon/obj
+/ModuleCommon/bin
+/Middleware/obj
+/Middleware/bin
