@@ -387,3 +387,6 @@
 /ModuleCommon/bin
 /Middleware/obj
 /Middleware/bin
+/.vs/ModuleDemo/DesignTimeBuild/.dtbcache
+/.vs/Module Test
+/.vs/ModuleDemo
