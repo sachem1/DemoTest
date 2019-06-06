@@ -1,26 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
+using System.Text;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using WebApplication1.Models;
 
-namespace WebApplication1.Controllers
+namespace WebApplication.Controllers
 {
     public class HomeController : Controller
     {
         private readonly IConfiguration _configuration;
+        private readonly ISession _session;
+        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(IConfiguration configuration)
+        public HomeController(IConfiguration configuration, ISession session, ILogger<HomeController> logger)
         {
             _configuration = configuration;
+            _session = session;
+            _logger = logger;
         }
 
         public IActionResult Index()
         {
             var redisSetting =_configuration.GetSection("Redis").Get<Redis>();
+            _logger.LogInformation($"sessionId:{_session.Id}");
+
+            _session.Set("test", Encoding.Default.GetBytes("这是我测试的session"));
             return View();
         }
 
@@ -28,6 +34,7 @@ namespace WebApplication1.Controllers
         {
             ViewData["Message"] = "Your application description page.";
 
+            _logger.LogInformation($"这是获取session:{Encoding.Default.GetString(_session.Get("test"))}");
             return View();
         }
 
