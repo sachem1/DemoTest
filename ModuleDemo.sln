@@ -11,17 +11,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Middleware", "Middleware\Mi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Redis", "Redis\Redis.csproj", "{DE5FDA85-34EC-4EAD-9EDC-E35F5DA4C488}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{E2BCF6A3-2908-4B90-A6FA-093E4A262044}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "WebApplication1\WebApplication.csproj", "{E2BCF6A3-2908-4B90-A6FA-093E4A262044}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{5028BA0F-F8E6-4F3B-A844-CB0C5D759E86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheAdapter", "CacheAdapter\CacheAdapter.csproj", "{ACC9501E-C954-42EC-9F34-0B7DCEACF635}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheAdapter", "CacheAdapter\CacheAdapter.csproj", "{ACC9501E-C954-42EC-9F34-0B7DCEACF635}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject", "XUnitTestProject\XUnitTestProject.csproj", "{32DEC7F1-4F11-4B2A-9A74-D3173A558F70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject", "XUnitTestProject\XUnitTestProject.csproj", "{32DEC7F1-4F11-4B2A-9A74-D3173A558F70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{91FDFA26-6593-43F5-B6DA-1AB9D80B6B3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{91FDFA26-6593-43F5-B6DA-1AB9D80B6B3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memcached", "Memcached\Memcached.csproj", "{BFB8A659-ABD3-4A37-8389-AAC48B22C243}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memcached", "Memcached\Memcached.csproj", "{BFB8A659-ABD3-4A37-8389-AAC48B22C243}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

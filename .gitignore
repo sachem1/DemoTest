@@ -382,11 +382,18 @@
 /WebApplication1/bin
 /XUnitTestProject/bin
 /EventBus/obj
+<<<<<<< HEAD
+/.vs
+=======
 /Middleware/bin/Debug/netcoreapp2.2
 /ModuleCommon/obj
 /ModuleCommon/bin
 /Middleware/obj
 /Middleware/bin
+<<<<<<< HEAD
 /.vs/ModuleDemo/DesignTimeBuild/.dtbcache
 /.vs/Module Test
 /.vs/ModuleDemo
+=======
+>>>>>>> 3fb0db461fcb703d3736672ec40914bf6efa083b
+>>>>>>> 2fc092ccb4d519e620f8fd2add958831e82b6241
