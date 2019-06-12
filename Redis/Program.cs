@@ -43,13 +43,20 @@ namespace Redis
             redisSetting.ClientName = "RedisTest";
             redisSetting.SyncTimeout = 10000;
             redisSetting.DefaultDb = 0;
-
+            string key = "test";
             ConnectionMultiplexer connectionMultiplexer = ConnectionMultiplexer.Connect(Extentions.Convert(redisSetting));
 
             var database = connectionMultiplexer.GetDatabase();
             database.StringSet("test1", DateTime.Now.Ticks);
             Console.WriteLine($"test1-->:{database.StringGet("test1")}");
 
+            database.SortedSetAdd(key, "zhangsan1", 22);
+            database.SortedSetAdd(key, "lisi1", 25);
+            database.SortedSetAdd(key, "wangwu1", 35);
+
+            //database.SortedSetCombineAndStore(SetOperation.Union, key, "zhangsan", "lisi");
+            //var data=database.SortedSetRangeByRankWithScores(key, 0, 30);
+            //Console.WriteLine($"sort data {data}");
 
         }
 
