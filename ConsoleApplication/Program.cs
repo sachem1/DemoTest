@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Reflection;
+using System.Threading.Tasks;
 using ConsoleApplication.Class;
 using ConsoleApplication.Func;
+using ConsoleApplication.Lock;
 
 namespace ConsoleApplication
 {
@@ -66,8 +69,8 @@ namespace ConsoleApplication
             //}
 
             {
-                Customer person = new Customer();
-                SampleFunc sampleFunc = new SampleFunc {InitCustomer = person.GetCustomer};
+                //Customer person = new Customer();
+                //SampleFunc sampleFunc = new SampleFunc {InitCustomer = person.GetCustomer};
                 //var xx = sampleFunc.GetCustomer = person.GeTask;
                 //sampleFunc.CustomerList = person.GetCustomerList;
                 //sampleFunc.Init(person.GetCustomer);
@@ -77,10 +80,30 @@ namespace ConsoleApplication
                 //sampleFunc.StringConvertUpper();
                //sampleFunc.StringIndex();
             }
+            //{
+            //    Test test=new Test();
+            //    var i = 10;
+            //    Console.WriteLine(test.Add(i));
+            //}
+
+            //{
+            //    Child child = new Child();
+            //    child.Print();
+
+            //    Parent parent = new Child();
+            //    parent.Print();
+
+
+            //    Third third = new Third();
+            //    third.Print();
+            //}
+
             {
-                Test test=new Test();
-                var i = 10;
-                Console.WriteLine(test.Add(i));
+                SampleInterlocked interlocked=new SampleInterlocked();
+                Parallel.For(0, 10, (i,state) =>
+                {
+                    interlocked.LoadData();
+                });
             }
             Console.ReadLine();
         }
