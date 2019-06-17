@@ -42,12 +42,12 @@ namespace WindowsFormsApp
             button.Name = "btn_test";
             button.Size = new System.Drawing.Size(80, 50);
             button.TabIndex = 2;
-            button.Text = "测试";
+            button.Text = @"测试";
             button.UseVisualStyleBackColor = true;
             button.Click += async (o, e) =>
             {
                 var html = await GetBaiduHtml();
-                Console.WriteLine($"baidu--->taskId:{Task.CurrentId},{html}");
+                Console.WriteLine($@"baidu--->taskId:{Task.CurrentId},{html}");
             };
             this.Controls.Add(button);
         }

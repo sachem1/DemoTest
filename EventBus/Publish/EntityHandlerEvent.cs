@@ -2,7 +2,7 @@
 using EventBus.Entitys;
 using EventBus.Event;
 
-namespace EventBus.Handlers
+namespace EventBus.Publish
 {
     public class EntityHandlerEvent : IConsumer<EntityAddEvent<Order>>, IConsumer<EntityUpdateEvent<Order>>
     {

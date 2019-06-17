@@ -1,4 +1,7 @@
 ﻿using System;
+using Autofac;
+using Autofac.Extras.DynamicProxy2;
+using ConsoleApplication.AOP;
 using ConsoleApplication.Class;
 using ConsoleApplication.Func;
 
@@ -66,8 +69,8 @@ namespace ConsoleApplication
             //}
 
             {
-                Customer person = new Customer();
-                SampleFunc sampleFunc = new SampleFunc {InitCustomer = person.GetCustomer};
+                //Customer person = new Customer();
+                //SampleFunc sampleFunc = new SampleFunc {InitCustomer = person.GetCustomer};
                 //var xx = sampleFunc.GetCustomer = person.GeTask;
                 //sampleFunc.CustomerList = person.GetCustomerList;
                 //sampleFunc.Init(person.GetCustomer);
@@ -75,20 +78,32 @@ namespace ConsoleApplication
                 //Console.WriteLine($"名字:{zz.Result.Name}");
 
                 //sampleFunc.StringConvertUpper();
-               //sampleFunc.StringIndex();
+                //sampleFunc.StringIndex();
             }
+            //{
+            //    Test test=new Test();
+            //    var i = 10;
+            //    Console.WriteLine(test.Add(i));
+            //}
+
             {
-                Test test=new Test();
-                var i = 10;
-                Console.WriteLine(test.Add(i));
+                var builder = new ContainerBuilder();
+                //builder.RegisterType<PersonModel>().As<IPerson>().EnableInterfaceInterceptors();
+                builder.RegisterType<CustomerModel>().As<IPerson>().EnableInterfaceInterceptors()
+                    .InterceptedBy(typeof(LogInterceptor));
+                builder.RegisterType<LogInterceptor>();
+                using (var containter = builder.Build())
+                {
+                    containter.Resolve<IPerson>().Say();
+                }
             }
             Console.ReadLine();
         }
 
-        public  class Test
+        public class Test
         {
 
-            public  int Add(int n)
+            public int Add(int n)
             {
                 n += 5;
                 return n;

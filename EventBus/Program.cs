@@ -3,7 +3,7 @@ using Autofac;
 using EventBus.Db;
 using EventBus.Entitys;
 using EventBus.Event;
-using EventBus.Handlers;
+using EventBus.Publish;
 
 namespace EventBus
 {

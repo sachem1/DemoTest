@@ -8,3 +8,13 @@ L:\Work\GitRepository\DemoTest\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
 L:\Work\GitRepository\DemoTest\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
 L:\Work\GitRepository\DemoTest\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
 L:\Work\GitRepository\DemoTest\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
+I:\Work\PersonProject\Github\DemoTest\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe.config
+I:\Work\PersonProject\Github\DemoTest\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
+I:\Work\PersonProject\Github\DemoTest\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
+I:\Work\PersonProject\Github\DemoTest\WindowsFormsApp\obj\Debug\WindowsFormsApp.csprojAssemblyReference.cache
+I:\Work\PersonProject\Github\DemoTest\WindowsFormsApp\obj\Debug\WindowsFormsApp.winForm.resources
+I:\Work\PersonProject\Github\DemoTest\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
+I:\Work\PersonProject\Github\DemoTest\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
+I:\Work\PersonProject\Github\DemoTest\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
+I:\Work\PersonProject\Github\DemoTest\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
+I:\Work\PersonProject\Github\DemoTest\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb

@@ -15,7 +15,6 @@ namespace EventBus.Db
             _eventPublisher.Publish(new EntityAddEvent<Order>(order));
         }
 
-
         public void InsertData<TEntity>(TEntity entity)where TEntity:BaseEntity
         {
             _eventPublisher = new EventPublisher();
@@ -29,6 +28,7 @@ namespace EventBus.Db
             this.Update();
             _eventPublisher.Publish(new EntityUpdateEvent<TEntity>(entity));
         }
+
         public void InsertChange() {
             Console.WriteLine("保存成功");
         }
