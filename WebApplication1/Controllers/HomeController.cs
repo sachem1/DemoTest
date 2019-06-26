@@ -1,5 +1,9 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Concurrent;
+using System.Diagnostics;
+using System.Linq;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -11,22 +15,23 @@ namespace WebApplication.Controllers
     public class HomeController : Controller
     {
         private readonly IConfiguration _configuration;
-        private readonly ISession _session;
+        private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly ILogger<HomeController> _logger;
+        private ISession Session => _httpContextAccessor.HttpContext.Session;
 
-        public HomeController(IConfiguration configuration, ISession session, ILogger<HomeController> logger)
+        public HomeController(IConfiguration configuration, ILogger<HomeController> logger, IHttpContextAccessor httpContextAccessor)
         {
             _configuration = configuration;
-            _session = session;
             _logger = logger;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public IActionResult Index()
         {
-            var redisSetting =_configuration.GetSection("Redis").Get<Redis>();
-            _logger.LogInformation($"sessionId:{_session.Id}");
+            var redisSetting = _configuration.GetSection("Redis").Get<Redis>();
+            _logger.LogInformation($"sessionId:{Session.Id}");
 
-            _session.Set("test", Encoding.Default.GetBytes("这是我测试的session"));
+            Session.Set("test", Encoding.Default.GetBytes("这是我测试的session"));
             return View();
         }
 
@@ -34,7 +39,7 @@ namespace WebApplication.Controllers
         {
             ViewData["Message"] = "Your application description page.";
 
-            _logger.LogInformation($"这是获取session:{Encoding.Default.GetString(_session.Get("test"))}");
+            _logger.LogInformation($"这是获取session:{Encoding.Default.GetString(Session.Get("test"))}");
             return View();
         }
 
@@ -54,6 +59,23 @@ namespace WebApplication.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        ConcurrentQueue<string> requestQueue = new ConcurrentQueue<string>();
+
+
+        public async Task<IActionResult> GrabBill(string requestId)
+        {
+            requestQueue.Append(requestId);
+            var cts = new TaskCompletionSource<bool>();
+            while (true)
+            {
+                Thread.Sleep(1200);
+                cts.SetResult(true);
+                break;
+            }
+
+            return await Task.FromResult(new JsonResult(new { Success = requestQueue.Count }));
         }
     }
 }

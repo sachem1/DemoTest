@@ -9,4 +9,5 @@
   &lt;Assembly Path="C:\Users\jieqiang.CAAD\.nuget\packages\enyimmemcachedcore\2.2.3\lib\netstandard2.0\EnyimMemcachedCore.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Users\jieqiang.CAAD\.nuget\packages\microsoft.extensions.configuration\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Users\jieqiang.CAAD\.nuget\packages\autofac.extensions.dependencyinjection\4.4.0\lib\netstandard2.0\Autofac.Extensions.DependencyInjection.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.session\2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Session.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

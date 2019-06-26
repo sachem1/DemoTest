@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -50,6 +53,30 @@ namespace WindowsFormsApp
                 Console.WriteLine($@"baidu--->taskId:{Task.CurrentId},{html}");
             };
             this.Controls.Add(button);
+        }
+
+        private void btnRequest_Click(object sender, EventArgs e)
+        {
+            var url = "https://localhost:44316/home/GrabBill?requestId=";
+            Parallel.For(0, 4, i => { Spide(url, i); });
+        }
+
+        private static void Spide(string url, int i)
+        {
+            HttpWebRequest client = WebRequest.CreateHttp(url + i);
+            client.Method = "GET";
+            using (WebResponse webResponse = client.GetResponse())
+            {
+                using (var stream = webResponse.GetResponseStream())
+                {
+                    using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+                    {
+                        var msg = reader.ReadToEnd();
+                        Console.WriteLine($"接受到消息:{msg}");
+                    }
+                }
+            }
+            Thread.Sleep(100);
         }
     }
 }

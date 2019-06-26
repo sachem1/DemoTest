@@ -403,3 +403,11 @@
 =======
 >>>>>>> 2fc092ccb4d519e620f8fd2add958831e82b6241
 >>>>>>> 709514340ba8e255470078ce6a39e64b470954c9
+/ConsoleApp/obj/Debug
+/packages/iTextSharp.5.5.13.1/.signature.p7s
+/packages/iTextSharp.5.5.13.1/LICENSE.md
+/packages/iTextSharp.5.5.13.1/gnu-agpl-v3.0.md
+/packages/iTextSharp.5.5.13.1/iTextSharp.5.5.13.1.nupkg
+/packages/iTextSharp.5.5.13.1/lib/iTextSharp.xml
+/packages/iTextSharp.5.5.13.1/lib/itextsharp.dll
+/packages/iTextSharp.5.5.13.1/notice.txt

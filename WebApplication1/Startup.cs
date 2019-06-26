@@ -37,13 +37,7 @@ namespace WebApplication
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddDistributedMemoryCache();
-
-            services.AddSession(option =>
-            {
-                option.IdleTimeout = TimeSpan.FromMinutes(5);
-            });
-
-            //services.AddSingleton<ISession,Sess>
+            services.AddSession();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -62,12 +56,12 @@ namespace WebApplication
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
-            app.UseAuthentication();
             app.UseSession();
+            app.UseAuthentication();
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
