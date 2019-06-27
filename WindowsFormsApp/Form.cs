@@ -57,7 +57,7 @@ namespace WindowsFormsApp
 
         private void btnRequest_Click(object sender, EventArgs e)
         {
-            var url = "https://localhost:44316/home/GrabBill?requestId=";
+            var url = "http://localhost:14873/home/GrabBill?requestId=";
             Parallel.For(0, 4, i => { Spide(url, i); });
         }
 

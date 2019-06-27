@@ -61,12 +61,12 @@ namespace WebApplication.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        ConcurrentQueue<string> requestQueue = new ConcurrentQueue<string>();
+        static ConcurrentQueue<string> requestQueue = new ConcurrentQueue<string>();
 
 
         public async Task<IActionResult> GrabBill(string requestId)
         {
-            requestQueue.Append(requestId);
+            requestQueue.Enqueue(requestId);
             var cts = new TaskCompletionSource<bool>();
             while (true)
             {
@@ -74,7 +74,6 @@ namespace WebApplication.Controllers
                 cts.SetResult(true);
                 break;
             }
-
             return await Task.FromResult(new JsonResult(new { Success = requestQueue.Count }));
         }
     }
