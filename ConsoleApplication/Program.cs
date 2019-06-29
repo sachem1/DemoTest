@@ -1,14 +1,8 @@
 ﻿using System;
-<<<<<<< HEAD
 using Autofac;
 using Autofac.Extras.DynamicProxy2;
 using ConsoleApplication.AOP;
-=======
-using System.Reflection;
 using System.Threading.Tasks;
->>>>>>> 34e58cde9d4d2c908858e855ae9b9669911441cd
-using ConsoleApplication.Class;
-using ConsoleApplication.Func;
 using ConsoleApplication.Lock;
 
 namespace ConsoleApplication
@@ -92,7 +86,6 @@ namespace ConsoleApplication
             //    Console.WriteLine(test.Add(i));
             //}
 
-<<<<<<< HEAD
             {
                 var builder = new ContainerBuilder();
                 //builder.RegisterType<PersonModel>().As<IPerson>().EnableInterfaceInterceptors();
@@ -103,7 +96,7 @@ namespace ConsoleApplication
                 {
                     containter.Resolve<IPerson>().Say();
                 }
-=======
+            }
             //{
             //    Child child = new Child();
             //    child.Print();
@@ -122,7 +115,6 @@ namespace ConsoleApplication
                 {
                     interlocked.LoadData();
                 });
->>>>>>> 34e58cde9d4d2c908858e855ae9b9669911441cd
             }
             Console.ReadLine();
         }
