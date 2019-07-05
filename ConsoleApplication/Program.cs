@@ -2,8 +2,6 @@
 using Autofac;
 using Autofac.Extras.DynamicProxy2;
 using ConsoleApplication.AOP;
-using System.Threading.Tasks;
-using ConsoleApplication.Lock;
 
 namespace ConsoleApplication
 {
@@ -109,13 +107,13 @@ namespace ConsoleApplication
             //    third.Print();
             //}
 
-            {
-                SampleInterlocked interlocked=new SampleInterlocked();
-                Parallel.For(0, 10, (i,state) =>
-                {
-                    interlocked.LoadData();
-                });
-            }
+            //{
+            //    SampleInterlocked interlocked=new SampleInterlocked();
+            //    Parallel.For(0, 10, (i,state) =>
+            //    {
+            //        interlocked.LoadData();
+            //    });
+            //}
             Console.ReadLine();
         }
 

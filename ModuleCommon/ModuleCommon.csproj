@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Uow\" />
+    <Folder Include="PDF\" />
   </ItemGroup>
 
 </Project>
