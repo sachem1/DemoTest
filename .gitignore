@@ -415,3 +415,8 @@
 /ConsoleApp/bin
 /WindowsFormsApp/obj
 /WindowsFormsApp/bin
+/RabbitMq/bin
+/RabbitMq/obj
+/RabbitmqConsole/bin/Debug/netcoreapp2.2
+/RabbitmqConsole/obj/Debug/netcoreapp2.2
+/RabbitmqConsole/obj
