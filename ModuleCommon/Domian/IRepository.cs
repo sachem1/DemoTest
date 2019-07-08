@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ModuleCommon.Repository
+﻿namespace ModuleCommon.Domian
 {
     public interface IRepository<TEntity> where TEntity : class
     {

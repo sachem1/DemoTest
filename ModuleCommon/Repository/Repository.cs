@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using ModuleCommon.Domian;
 using ModuleCommon.Entity;
 
 namespace ModuleCommon.Repository

@@ -413,3 +413,13 @@
 /packages/iTextSharp.5.5.13.1/notice.txt
 /Jiesen.Message/bin
 /Jiesen.Message/obj
+/MongoDBConsole/obj
+/MongoDBConsole/bin
+/RabbitMq/obj
+/RabbitmqConsole/bin/Debug/netcoreapp2.2
+/RabbitmqConsole/obj/Debug/netcoreapp2.2
+/WindowsFormsApp/bin/Debug
+/WindowsFormsApp/obj/Debug
+/ConsoleApp/bin/Debug
+/RabbitMq/bin/Debug/netstandard2.0
+/RabbitmqConsole/obj
