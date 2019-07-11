@@ -1,4 +1,5 @@
-﻿using System.Collections.Concurrent;
+﻿using System;
+using System.Collections.Concurrent;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -67,14 +68,20 @@ namespace WebApplication.Controllers
         public async Task<IActionResult> GrabBill(string requestId)
         {
             requestQueue.Enqueue(requestId);
-            var cts = new TaskCompletionSource<bool>();
+            var tcs = new TaskCompletionSource<bool>();
             while (true)
             {
                 Thread.Sleep(1200);
-                cts.SetResult(true);
+                tcs.SetResult(true);
                 break;
             }
             return await Task.FromResult(new JsonResult(new { Success = requestQueue.Count }));
+        }
+
+        public async Task<IActionResult> GetTimeOutTest()
+        {
+            var cts = new CancellationTokenSource(TimeSpan.FromSeconds(10));
+            return null;
         }
     }
 }

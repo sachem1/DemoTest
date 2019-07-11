@@ -84,17 +84,17 @@ namespace ConsoleApplication
             //    Console.WriteLine(test.Add(i));
             //}
 
-            {
-                var builder = new ContainerBuilder();
-                //builder.RegisterType<PersonModel>().As<IPerson>().EnableInterfaceInterceptors();
-                builder.RegisterType<CustomerModel>().As<IPerson>().EnableInterfaceInterceptors()
-                    .InterceptedBy(typeof(LogInterceptor));
-                builder.RegisterType<LogInterceptor>();
-                using (var containter = builder.Build())
-                {
-                    containter.Resolve<IPerson>().Say();
-                }
-            }
+            //{
+            //    var builder = new ContainerBuilder();
+            //    //builder.RegisterType<PersonModel>().As<IPerson>().EnableInterfaceInterceptors();
+            //    builder.RegisterType<CustomerModel>().As<IPerson>().EnableInterfaceInterceptors()
+            //        .InterceptedBy(typeof(LogInterceptor));
+            //    builder.RegisterType<LogInterceptor>();
+            //    using (var containter = builder.Build())
+            //    {
+            //        containter.Resolve<IPerson>().Say();
+            //    }
+            //}
             //{
             //    Child child = new Child();
             //    child.Print();
@@ -114,6 +114,9 @@ namespace ConsoleApplication
             //        interlocked.LoadData();
             //    });
             //}
+            ThreadTest.SpinWaitTrueTime();
+            ThreadTest.SpinWaitFalseTime();
+            ThreadTest.ThreadTime();
             Console.ReadLine();
         }
 
