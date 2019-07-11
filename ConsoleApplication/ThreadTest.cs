@@ -40,7 +40,7 @@ namespace ConsoleApplication
                 {
                     SpinWait.SpinUntil(() => false, _timeout_ms);
                 }
-                Console.WriteLine("SpinWait false Consume  Time:{0}", sw.Elapsed.ToString());
+                Console.WriteLine("SpinWait false Consume Time:{0}", sw.Elapsed.ToString());
             });
             thread.IsBackground = true;
             thread.Start();
