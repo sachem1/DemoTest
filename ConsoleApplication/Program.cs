@@ -114,9 +114,16 @@ namespace ConsoleApplication
             //        interlocked.LoadData();
             //    });
             //}
-            ThreadTest.SpinWaitTrueTime();
-            ThreadTest.SpinWaitFalseTime();
-            ThreadTest.ThreadTime();
+            //{
+            //    ThreadTest.SpinWaitTrueTime();
+            //    ThreadTest.SpinWaitFalseTime();
+            //    ThreadTest.ThreadTime();
+            //}
+
+            {
+                ExceptionTest.TryCatch_Test();
+                ExceptionTest.Not_TryCatch_Test();
+            }
             Console.ReadLine();
         }
 
