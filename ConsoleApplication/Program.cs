@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using Autofac;
 using Autofac.Extras.DynamicProxy2;
+using ConsoleApplication.Algorithm;
 using ConsoleApplication.AOP;
 
 namespace ConsoleApplication
@@ -121,8 +123,26 @@ namespace ConsoleApplication
             //}
 
             {
-                ExceptionTest.TryCatch_Test();
-                ExceptionTest.Not_TryCatch_Test();
+                //ExceptionTest.TryCatch_Test();
+                //ExceptionTest.Not_TryCatch_Test();
+
+                //Combination combination = new Combination();
+                //string[] items = { "one", "two", "three" };
+                //foreach (string[] permutation in Combination.GetPermutations(items))
+                //{
+                //    Console.WriteLine(String.Join(", ", permutation));
+                //}
+                List<int> list = new List<int>();
+                for (int i = 0; i < 10; i++)
+                {
+                    list.Add(i);
+                }
+                var result= Combination.GetKCombs(list, 3);
+                foreach (var item in result)
+                {
+                    Console.WriteLine(string.Join(",",item));
+                    Console.WriteLine("\r\n");
+                }
             }
             Console.ReadLine();
         }
