@@ -30,6 +30,9 @@
         {
             this.btnBaidu = new System.Windows.Forms.Button();
             this.btnRequest = new System.Windows.Forms.Button();
+            this.btn_StartTask = new System.Windows.Forms.Button();
+            this.btn_StopTask = new System.Windows.Forms.Button();
+            this.btnInstallService = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBaidu
@@ -44,7 +47,7 @@
             // 
             // btnRequest
             // 
-            this.btnRequest.Location = new System.Drawing.Point(70, 161);
+            this.btnRequest.Location = new System.Drawing.Point(240, 49);
             this.btnRequest.Name = "btnRequest";
             this.btnRequest.Size = new System.Drawing.Size(75, 23);
             this.btnRequest.TabIndex = 1;
@@ -52,12 +55,45 @@
             this.btnRequest.UseVisualStyleBackColor = true;
             this.btnRequest.Click += new System.EventHandler(this.btnRequest_Click);
             // 
+            // btn_StartTask
+            // 
+            this.btn_StartTask.Location = new System.Drawing.Point(70, 399);
+            this.btn_StartTask.Name = "btn_StartTask";
+            this.btn_StartTask.Size = new System.Drawing.Size(75, 23);
+            this.btn_StartTask.TabIndex = 0;
+            this.btn_StartTask.Text = "开启任务";
+            this.btn_StartTask.UseVisualStyleBackColor = true;
+            this.btn_StartTask.Click += new System.EventHandler(this.btn_StartTask_Click);
+            // 
+            // btn_StopTask
+            // 
+            this.btn_StopTask.Location = new System.Drawing.Point(167, 399);
+            this.btn_StopTask.Name = "btn_StopTask";
+            this.btn_StopTask.Size = new System.Drawing.Size(75, 23);
+            this.btn_StopTask.TabIndex = 0;
+            this.btn_StopTask.Text = "停止任务";
+            this.btn_StopTask.UseVisualStyleBackColor = true;
+            this.btn_StopTask.Click += new System.EventHandler(this.btn_StopTask_Click);
+            // 
+            // btnInstallService
+            // 
+            this.btnInstallService.Location = new System.Drawing.Point(70, 359);
+            this.btnInstallService.Name = "btnInstallService";
+            this.btnInstallService.Size = new System.Drawing.Size(75, 23);
+            this.btnInstallService.TabIndex = 0;
+            this.btnInstallService.Text = "安装服务";
+            this.btnInstallService.UseVisualStyleBackColor = true;
+            this.btnInstallService.Click += new System.EventHandler(this.btnInstallService_Click);
+            // 
             // winForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRequest);
+            this.Controls.Add(this.btn_StopTask);
+            this.Controls.Add(this.btnInstallService);
+            this.Controls.Add(this.btn_StartTask);
             this.Controls.Add(this.btnBaidu);
             this.Name = "winForm";
             this.Text = "Form";
@@ -70,6 +106,9 @@
 
         private System.Windows.Forms.Button btnBaidu;
         private System.Windows.Forms.Button btnRequest;
+        private System.Windows.Forms.Button btn_StartTask;
+        private System.Windows.Forms.Button btn_StopTask;
+        private System.Windows.Forms.Button btnInstallService;
     }
 }
 

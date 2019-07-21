@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp.FileHandle;
 
 namespace WindowsFormsApp
 {
@@ -24,6 +25,23 @@ namespace WindowsFormsApp
         private void winForm_Load(object sender, EventArgs e)
         {
             BuildButton();
+
+            try
+            {
+                //DirectoryInfoDemo directory = new DirectoryInfoDemo();
+                //directory.CreateDirectory();
+
+                //FileInfoDemo fileInfoDemo=new FileInfoDemo();
+                //fileInfoDemo.WriteLog();
+
+                WriteLogService writeLogService=new WriteLogService();
+                writeLogService.AppendLogFile();
+            }
+            catch (Exception )
+            {
+
+                throw;
+            }
         }
 
         private void btnBaidu_Click(object sender, EventArgs e)
@@ -77,6 +95,21 @@ namespace WindowsFormsApp
                 }
             }
             Thread.Sleep(100);
+        }
+
+        private void btnInstallService_Click(object sender, EventArgs e)
+        {
+            string url = "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319";
+        }
+
+        private void btn_StopTask_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_StartTask_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
