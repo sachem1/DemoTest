@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Autofac;
 using Autofac.Extras.DynamicProxy2;
 using ConsoleApplication.Algorithm;
@@ -133,16 +134,18 @@ namespace ConsoleApplication
                 //    Console.WriteLine(String.Join(", ", permutation));
                 //}
                 List<int> list = new List<int>();
-                for (int i = 0; i < 10; i++)
+                for (int i = 1; i <= 10; i++)
                 {
                     list.Add(i);
                 }
                 var result= Combination.GetKCombs(list, 3);
-                foreach (var item in result)
+                var enumerable = result as IEnumerable<int>[] ?? result.ToArray();
+                foreach (var item in enumerable)
                 {
                     Console.WriteLine(string.Join(",",item));
                     Console.WriteLine("\r\n");
                 }
+                Console.WriteLine($"组合数:{enumerable.Length}");
             }
             Console.ReadLine();
         }

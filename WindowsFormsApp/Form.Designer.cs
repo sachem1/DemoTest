@@ -33,6 +33,7 @@
             this.btn_StartTask = new System.Windows.Forms.Button();
             this.btn_StopTask = new System.Windows.Forms.Button();
             this.btnInstallService = new System.Windows.Forms.Button();
+            this.btn_asyncTask = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBaidu
@@ -85,6 +86,16 @@
             this.btnInstallService.UseVisualStyleBackColor = true;
             this.btnInstallService.Click += new System.EventHandler(this.btnInstallService_Click);
             // 
+            // btn_asyncTask
+            // 
+            this.btn_asyncTask.Location = new System.Drawing.Point(404, 49);
+            this.btn_asyncTask.Name = "btn_asyncTask";
+            this.btn_asyncTask.Size = new System.Drawing.Size(75, 23);
+            this.btn_asyncTask.TabIndex = 0;
+            this.btn_asyncTask.Text = "异步等待任务";
+            this.btn_asyncTask.UseVisualStyleBackColor = true;
+            this.btn_asyncTask.Click += new System.EventHandler(this.btn_asyncTask_Click);
+            // 
             // winForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -94,6 +105,7 @@
             this.Controls.Add(this.btn_StopTask);
             this.Controls.Add(this.btnInstallService);
             this.Controls.Add(this.btn_StartTask);
+            this.Controls.Add(this.btn_asyncTask);
             this.Controls.Add(this.btnBaidu);
             this.Name = "winForm";
             this.Text = "Form";
@@ -109,6 +121,7 @@
         private System.Windows.Forms.Button btn_StartTask;
         private System.Windows.Forms.Button btn_StopTask;
         private System.Windows.Forms.Button btnInstallService;
+        private System.Windows.Forms.Button btn_asyncTask;
     }
 }
 

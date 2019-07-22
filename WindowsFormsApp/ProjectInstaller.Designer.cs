@@ -42,12 +42,13 @@
             this.serviceWriteLog.Description = "这是一个定时写入文件日志任务,测试是否正确";
             this.serviceWriteLog.DisplayName = "TasklService";
             this.serviceWriteLog.ServiceName = "TasklService";
+            this.serviceWriteLog.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
             // ProjectInstaller
             // 
             this.Installers.AddRange(new System.Configuration.Install.Installer[] {
-            this.serviceProcessInstaller1,
-            this.serviceWriteLog});
+            this.serviceWriteLog,
+            this.serviceProcessInstaller1});
 
         }
 
