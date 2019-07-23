@@ -425,3 +425,12 @@
 /RabbitmqConsole/obj
 /Jiesen.Dapper/obj
 /MyWindowService/obj
+/Jiesen.Common/bin/Debug
+/Jiesen.Common/obj/Debug
+/Jiesen.ConsoleApp/bin/Debug
+/Jiesen.ConsoleApp/obj/Debug
+/Jiesen.Scheduler/bin/Debug
+/Jiesen.Scheduler/obj/Debug
+/MyWindowService/bin/Debug/netcoreapp2.2
+/packages/Quartz.3.0.7/lib
+/packages/Quartz.3.0.7
