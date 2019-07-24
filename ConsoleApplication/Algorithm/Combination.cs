@@ -60,8 +60,6 @@ namespace ConsoleApplication.Algorithm
             index[offset2] = temp;
         }
 
-
-
         public static IEnumerable<IEnumerable<T>> GetKCombs<T>(IEnumerable<T> list, int length) where T : IComparable
         {
             if (length == 1) return list.Select(t => new T[] { t });
@@ -69,9 +67,6 @@ namespace ConsoleApplication.Algorithm
                 .SelectMany(t => list.Where(o => o.CompareTo(t.Last()) > 0),
                     (t1, t2) => t1.Concat(new T[] { t2 }));
         }
-
-
-
         public static void Test()
         {
             Dictionary<string, List<string>> finishProductDic = new Dictionary<string, List<string>>();
@@ -91,8 +86,7 @@ namespace ConsoleApplication.Algorithm
                 Console.WriteLine("\r\n");
             }
         }
-
-
+        
         public static void Test2()
         {
             Dictionary<string, List<string>> finishProductDic = new Dictionary<string, List<string>>();
