@@ -34,10 +34,10 @@ namespace WindowsFormsApp
                 //FileInfoDemo fileInfoDemo=new FileInfoDemo();
                 //fileInfoDemo.WriteLog();
 
-                WriteLogService writeLogService = new WriteLogService();
+                WriteLogService writeLogService=new WriteLogService();
                 writeLogService.AppendLogFile();
             }
-            catch (Exception)
+            catch (Exception )
             {
 
                 throw;
@@ -97,28 +97,6 @@ namespace WindowsFormsApp
             Thread.Sleep(100);
         }
 
-
-        private void WaitTask()
-        {
-            var t = new TaskCompletionSource<bool>();
-
-
-            List<Task> tasks = new List<Task>();
-            for (int i = 0; i < 20; i++)
-            {
-                tasks.Add(Task.Factory.StartNew(() =>
-                {
-                    Thread.Sleep(2000);
-                }));
-            }
-            Task.WaitAll(tasks.ToArray());
-
-            Console.WriteLine("任务完成!");
-
-            //Console.WriteLine("任务失败!");
-
-        }
-
         private void btnInstallService_Click(object sender, EventArgs e)
         {
             string url = "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319";
@@ -132,11 +110,6 @@ namespace WindowsFormsApp
         private void btn_StartTask_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btn_asyncTask_Click(object sender, EventArgs e)
-        {
-            WaitTask();
         }
     }
 }

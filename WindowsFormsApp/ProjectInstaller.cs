@@ -29,7 +29,8 @@ namespace WindowsFormsApp
 
         private void ProjectInstaller_Committed(object sender, InstallEventArgs e)
         {
-           
+            ServiceController serviceController = new ServiceController("TasklService");
+            serviceController.Start();
         }
     }
 }
